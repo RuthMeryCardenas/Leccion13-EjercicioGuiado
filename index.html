@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lección 13 - Ejercicio Guiado</title>
+  <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+  <h1>REGISTRO DE DATOS PERSONALES</h1>
+  <section>
+    <form action="">
+      <div class="">
+        <label for="name">Nombre</label><br/>
+        <input id="name" type="text" required/>
+      </div><br/>
+      <div class="">
+        <label for="lastname">Apellidos</label><br/>
+        <input id="lastname" type="text" required/>
+      </div><br/>
+      <div class="">
+        <label for="telephone">Teléfono</label><br/>
+        <input id="telephone" type="text" title="Número celular de 9 dígitos" pattern="^[9][0-9]{8}$" required>
+      </div><br/>
+      <div class="">
+        <label for="cars">Elige tu carro para continuar </label><br/>
+        <select name="" id="cars" required>
+          <option value="0" hidden>Escoge tu carro</option>
+          <option value="1">Mercedes</option>
+          <option value="2">Toyota</option>
+          <option value="3">Mitsubishi</option>
+          <option value="4">Volkswagen</option>
+          <option value="5">Ferrari</option>
+        </select>
+      </div><br/>
+      <div class="">
+        <label for="email" required>E-mail</label><br/>
+        <input id="email" type="email" required>
+      </div><br/>
+      <div class="">
+        <label for="password">Contraseña</label><br/>
+        <input id="password" type="password" title="Contraseña de 6 ó más dígitos" pattern=".{6,}" required>
+      </div><br/>
+      <button type="submit" name="button">send</button>
+    </form>
+  </section>
+</body>
+</html>
